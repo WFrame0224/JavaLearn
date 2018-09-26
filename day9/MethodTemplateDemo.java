@@ -1,6 +1,7 @@
 //采用模板的设计方法
 abstract class OperateTimeTemplate
 {
+	// 普通方法，只允许子类调用，不允许子类覆盖
 	final public long getTotalTime()//子类只能调用，不可以修改，采用final 关键字修饰
 	{
 		long begin = System.currentTimeMillis();//开始时间
