@@ -1,0 +1,4 @@
+数据流：提供了可以读/写任意数据类型的方法：
+	DataOutputStream：提供了很多writeXxx(Xxx value)方法
+	DataInputStream：  提供了readXxx()方法
+		注意：writeXxx和readXxx必须前后对应起来

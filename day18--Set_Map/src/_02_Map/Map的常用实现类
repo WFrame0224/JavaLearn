@@ -1,0 +1,21 @@
+Map的常用实现类：
+	HashMap：		采用哈希表算法，此时Map中的key不会保证添加的先后顺序，key也不允许重复
+				key判断重复的标准是key1和key2是equals为true，并且hashCode相等			
+	TreeMap：		采用红黑树算法，map中的key会按照自然顺序或者定制排序进行排序，key也不允许重复
+				key判断重复的标准是compareTo/compare的返回值是否为0
+	LinkedHashMap：	采用链表和hash表算法，此时Map中的key会保证先后添加的顺序，key不允许重复
+				key判断重复的标准和HashMap中的key的标准相同
+	Hashtable:	采用哈希表算法，是HashMap的前身（类似于Vector是ArrayList的前身）打死不用
+				所有的方法都使用synchronized修饰符，线程安全，但是相对于HashMap性能低
+	Properties:	采用哈希表算法，此时要求key和value都是String类型
+				是Map的实现类，hashtable的子类
+				用来加载资源文件
+------------------------------------------------------------------
+一般的，我们定义Map，key都使用不可变类（String），把key作为value的唯一名称
+----------------------------------------------------------------------
+HashMap和TreeMap以及LinkedHashMap都是线程不安全的，但是性能较高
+	解决方案：Map m = Collection.synchronizedMap(Map对象)
+	Hashtable类是线程安全的，但是性能较低
+	哈希表算法：做等值查询最快
+	树结构算法：做范围查询最快-->应用到索引上
+	

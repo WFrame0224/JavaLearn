@@ -1,0 +1,17 @@
+package day17_集合框架.List._04_LinkedList;
+
+import java.util.LinkedList;
+
+//LinkedList类实现单向队列和双向队列的接口
+public class LinkedListDemo {
+	public static void main(String[] args) {
+		LinkedList list = new LinkedList();
+		
+		list.addLast("B");
+		list.addLast("C");
+		list.addLast("D");
+		
+		list.addFirst("A");	
+		System.out.println(list);
+	}
+}

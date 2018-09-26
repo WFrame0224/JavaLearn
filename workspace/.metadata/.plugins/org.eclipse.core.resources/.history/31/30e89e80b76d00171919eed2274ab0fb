@@ -1,0 +1,25 @@
+package day16._03_Queue;
+
+import day16._02_Link.MyLinkList;
+
+public class MyDeque extends MyLinkList{
+	//在   链表尾    加入新的元素
+		public void addLast(Object ele) {
+			
+		}
+		//在  链表头   加入新的元素
+		public void addFirst(Object ele){
+		
+		}
+		
+		//删除指定元素值的节点
+		public void removeFirst(){
+			
+		}
+		public void removeLast(){
+			
+		}
+		public void remove(Object ele){
+			
+		}
+}

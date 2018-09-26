@@ -1,0 +1,5 @@
+管道流：实现两个线程之间的数据交互
+	PipedInputStream:
+	PipedOutputStream:
+	PipedReader:
+	PipedWriter:

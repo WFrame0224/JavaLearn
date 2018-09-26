@@ -1,0 +1,31 @@
+﻿代码助手:Alt+/
+快速修正：Ctrl+1
+删除选中的行：Ctrl+D
+组织导入：Ctrl+Shift+O
+格式化代码：Ctrl+Shift+F
+
+查看某个类的源代码：Ctrl+点进去
+快速Outline：Ctrl+O
+打开继承体系：Ctrl+T
+
+打开资源：Ctrl+Shift+R
+打开类型：Ctrl+Shift+T
+上下移动选中的行：Alt+Up/Down
+上下复制选中的行：Ctrl+Alt+Up/Down 
+
+
+单行注释：Ctrl+/
+多行注释：Ctrl+Shift+/
+取消多行注释: Ctrl+Shift+\
+变为大/小写：Ctrl+Shift+X/Y
+
+Alt+Shift+R：重命名
+
+如何查看快捷键
+
+断点调试
+F5：Step Into/进入
+F6：Step over/跳过
+F7：Step return/返回
+F8：Resume/继续
+

@@ -1,0 +1,4 @@
+java.util.Scanner类：扫描器类，表示输入操作
+	存在的方法：Xxx表示数据类型
+		boolean hasNextXxx():判断是否有下一种类型的数据
+		Xxx nextXxx():获取下一个该类型的数据

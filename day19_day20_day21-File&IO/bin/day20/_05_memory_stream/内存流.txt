@@ -1,0 +1,5 @@
+内存流（数组流）
+	把数据先临时存在数组中，待会再从数组中读取出来
+	1）：字节内存流：ByteArrayInputStream/ByteArrayOutputStream
+	2）：字符内存流: CharArrayReader/CharArrayWriter
+	3）：字符串流: StringReader/StringWriter(把数据临时存储在字符串中)

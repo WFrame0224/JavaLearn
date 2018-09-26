@@ -1,0 +1,22 @@
+集合操作的工具类:
+	1：Arrays类
+	2：Collections类
+=============================================
+	Arrays类：
+		1、在Collection接口中有一个方法叫做toArray把集合转换为Object数组
+			把集合转换为数组：Object[] arr = 集合对象.toArray();
+			数组也可以转换为集合(List集合)：public static <T> List<T> asList(T... a) 等价于public static <T> List<T> asList(T[] a)
+												通过Arrays.asList方法得到List对象的长度固定的，不能增也不能减
+												原因：asList方法返回的ArrayList对象，不是java.util.ArrayList而是Arrays类中的内部类对象	
+	Collections类：封装了Set，List，Map的操作的工具方法	
+	在Collections里有获取线程安全的好多方法
+	  List list = Collections.synchronizedList(new ArrayList());
+	  要做迭代的时候，就得使用Synchronize，因为迭代的时候是两个线程
+	  synchronized(list) {
+	     TODO
+	  }
+	---------------------------------------	
+	 Set set = Collections.synchronizedList(new HashSet());
+	 ---------------------------------------	
+	 Map map = Collections.synchronizedList(new HashMap());
+	 ---------------------------------------		 							

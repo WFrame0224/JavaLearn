@@ -1,0 +1,16 @@
+标准的IO：
+	标准的输入：通过键盘录入数据给程序
+	标准的输出：在屏幕上显示程序数据
+	--------------------------------
+	在System类中有两个常量：
+	in:    InputStream = S ystem.in;
+	out:   PrintStream = System.out;
+========================================
+标准流的重定向操作：
+	标准的输入：通过键盘录入数据给程序
+		重新指定输入方向不再是键盘，而是一个文件
+		static void setIn(InputStream in)
+		此后，System.in数据的来源就是通过setIn制定的源
+	标准的输出：在屏幕上显示程序数据
+		重新指定输出的目标不在是屏幕而是文件或其他
+		static void setOut(PrintStream out) 

@@ -1,0 +1,18 @@
+打印流：打印数据的，打印流只能是输出的
+	PrintStream：字节打印流
+	PrintWriter：字符打印流 
+	--对于PrintWriter当启用自动刷新之后
+	PrintWriter ps = new PrintWriter(new FileOutputStream(new File("file/out.txt")));
+	调用println或者printf或者format方法，便会立马刷新操作
+	如果没有开启自动刷新，则需要自动刷新，或者是缓冲区满之后会自动刷新，但是使用.close之后
+	一切解决 。
+	==================================
+	使用打印流作为输出流，此时的输出操作会特别简单，因为在打印流中
+		提供了print方法：打印不换行
+		提供了println方法：打印后再换行
+		print和println方法可以支持打印/输出各种类型的数据
+-------------------------------------------------------------------
+打印流中的格式化输出（printf）： 
+	System.out.println()其实等价于：PrintStream ps = System.out;
+								    ps.println;
+	

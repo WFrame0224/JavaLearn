@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.throw_s&apos; to &apos;com.throw_throws&apos;&#x0D;&#x0A;- Original project: &apos;day13_Exception&apos;&#x0D;&#x0A;- Original element: &apos;day13_Exception/src/com.throw_s&apos;&#x0D;&#x0A;- Renamed element: &apos;day13_Exception/src/com.throw_throws&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.throw_s&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.throw_s" name="com.throw_throws" qualified="false" references="true" stamp="1498445183091" textual="false" version="1.0"/>
+</session>

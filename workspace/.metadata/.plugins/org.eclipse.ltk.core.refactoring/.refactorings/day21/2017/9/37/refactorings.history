@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;对象流-序列化和反序列化&apos; to &apos;day19_day20_day21-File&amp;IO/src/day21._01_object_stream&apos;&#x0D;&#x0A;- Original project: &apos;day21&apos;&#x0D;&#x0A;- Destination element: &apos;day19_day20_day21-File&amp;IO/src/day21._01_object_stream&apos;&#x0D;&#x0A;- Original element: &apos;对象流-序列化和反序列化&apos;" description="Copy file" destination="=day19_day20_day21-File&amp;IO/src&lt;day21._01_object_stream" element1="src/day21/_01_object_stream/对象流-序列化和反序列化" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1505290469754" units="0" version="1.0"/>
+</session>

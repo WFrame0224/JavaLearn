@@ -1,0 +1,2 @@
+合并流/顺序（SequenceInputStream）
+	就是把多个输入流合并成一个流对象

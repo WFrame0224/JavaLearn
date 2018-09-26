@@ -1,0 +1,10 @@
+栈（stack）数据结构的一种，存储特点：LIFO
+	Stack 类表示先进后出（LIFO）的对象栈
+	栈结构在生活中的体现：
+		1）：QQ消息，A，B，C三个人先后发送消息，我们查看的时候发现最顶上的是最新的消息
+		2）：手枪的弹夹的装和发射
+	要来实现栈的存储，底层可以用数组来存储也可以使用链表来储存。
+	官方建议：
+			使用栈，尽量使用ArrayDeque:
+			Deque 接口及其实现提供了UFO堆栈操作的更完整和更加一致的set，应该优先使用此set，而非Stack类
+			Deque<Integer>  stack = new ArrayDeque<Integer>();

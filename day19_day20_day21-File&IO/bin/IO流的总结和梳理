@@ -1,0 +1,46 @@
+四大基流：
+	InputStream---OutputStream
+	Reader---Writer
+IO流的总结和梳理：
+	**文件流&&：--------------------->
+		FileInputStream
+		FileOutputStream
+		FileReader
+		FileWriter
+	**缓冲流&&：--------------------->
+		BufferedInputStream
+		BufferedOutputStream
+		BufferedReader
+		BufferedWriter
+	**转换流：---------------------->
+		InputStreamReader
+		OutputStreamWriter
+	**内存流：---------------------->
+		ByteArrayInputStream
+		ByteArrayOutputStream
+		CharArrayReader
+		CharArrayWriter
+		StringReader
+		StringWriter
+	**顺序流：----------------------->
+		SequenceInputStream
+	**对象流：----------------------->
+		ObjectInputStream
+		ObjectOutputStream
+	**打印流&&：---------------------->
+		PrintStream
+		PrintWriter
+	**数据流：------------------------>
+		DataInputStream
+		DataOutputStream
+	**管道流：------------------------>
+		PipedInputStream
+		PipedOutputStream
+		PipedReader
+		PipedWriter
+	========类=============
+	File
+	FilenameFilter
+	RandomAccessFile
+	Files
+	
