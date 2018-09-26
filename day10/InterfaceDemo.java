@@ -2,17 +2,35 @@
 interface IWalkable
 {
 	//IWalkable(){}//½Ó¿ÚÖĞÃ»ÓĞ¹¹ÔìÆ÷
+
+	// ½Ó¿ÚÖĞµÄ³ÉÔ±±äÁ¿Ö»ÄÜÊÇ¾²Ì¬±äÁ¿ Ä¬ÈÏÒÑ¾­ÊÇ  public static final 
+	// Òò¶øÏÂÃæµÄÓï¾äµÈÍ¬ÓÚ£ºpublic static final String abc = "abc";
 	String abc = "abc";
+	/**
+		½Ó¿ÚÖĞ¶¨ÒåµÄ·½·¨Ö»ÄÜÊÇ£º³éÏó·½·¨¡¢Àà·½·¨£¨staticĞŞÊÎ£©¡¢ºÍÄ¬ÈÏ·½·¨
+		Òò´Ë£¬Èç¹û²»ÊÇ¶¨ÒåÄ¬ÈÏ·½·¨£¬ÏµÍ³½«×Ô¶¯ÎªÆÕÍ¨·½·¨Ôö¼ÓabstractĞŞÊÎ·û£¬¼´½Ó¿ÚÖĞ¶¨ÒåÆÕÍ¨·½·¨Ê±£¬»á×Ô¶¯Ê¹ÓÃpublic abstractĞŞÊÎ·û£¬Òò¶øÆÕÍ¨·½·¨²»ÄÜÓĞ·½·¨Ìå
+	 */
 	void walk();
+
 	//ÄÚ²¿Àà
 	interface ABC	//·´±àÒë¹¤¾ß¿É¼û£¬½Ó¿ÚÖĞ¶¨ÒåµÄÄÚ²¿Àà¶¼ÊÇ¹«¹²µÄ¾²Ì¬ÄÚ²¿Àà£¬¼´public static interface ABC{}
 	{
+	}
+	// ÔÚ½Ó¿ÚÖĞ¶¨ÒåÄ¬ÈÏ·½·¨ĞèÒªÊ¹ÓÃdefaultĞŞÊÎ
+	default void DEF()
+	{
+		System.out.println("------------hello I am default method-------------");
 	}
 }
 //¶¨ÒåÒ»¸öË®Éú¶¯Îï½Ó¿Ú 
 interface ISwimable
 {
+	// ´ËÊ±µÈÓÚ public abstract void swim()
 	void swim();
+	public static void ISCharacter()
+	{
+		System.out.println("--------hello I am a static method-----------");
+	}
 }
 //¶¨ÒåÒ»¸öÁ½ÆÜ¶¯Îï½Ó¿Ú 
 interface IAnimal extends IWalkable,ISwimable//JavaÖĞ½Ó¿Ú¿ÉÒÔÊµÏÖ¶à¼Ì³Ğ£¬µ«ÊÇÀà²»¿ÉÒÔ
@@ -20,7 +38,7 @@ interface IAnimal extends IWalkable,ISwimable//JavaÖĞ½Ó¿Ú¿ÉÒÔÊµÏÖ¶à¼Ì³Ğ£¬µ«ÊÇÀà²
 
 }
 //Ã¨
-class Cat extends Object implements IWalkable
+class Cat extends Object implements IWalkable // ¼Ì³ĞË³±ãÊµÏÖ
 {
 	public  void walk()//×¢Òâ£º½Ó¿ÚÖĞµÄ·½·¨ÊÇ³éÏóµÄ£¬ËùÒÔÊµÏÖÀà±ØĞë¸²¸Ç½Ó¿ÚÖĞµÄ·½·¨£¬ÇÒ±ØĞëÊ¹ÓÃpublicĞŞÊÎ
 	{
@@ -70,7 +88,14 @@ public class InterfaceDemo
 		IWalkable c = new Cat();//ÃæÏò½Ó¿Ú±à³Ì£¬¸üÄÜÌåÏÖ¶àÌ¬ÌØÕ÷
 		//Cat c = new Cat();//´Ë·½·¨ Ó¦¸ÃÉáÆú
 		c.walk();//¸üÄÜÌåÏÖ¶àÌ¬ÌØÕ÷,µ÷ÓÃÊµÏÖÀàÖĞµÄ·½·¨
-
+		c.DEF();
+		//c.abc = "def";
+		/**
+			InterfaceDemo.java:77: ´íÎó: ÎŞ·¨Îª×îÖÕ±äÁ¿abc·ÖÅäÖµ
+				c.abc = "def";
+					  ^
+		 */
+		ISwimable.ISCharacter();
 		ISwimable f = new Fish();
 		f.swim();
 		
