@@ -13,6 +13,10 @@ class Outter
 			System.out.println(new Outter().name);
 		}
 	}
+	public void accessStaticInnerInstatncefild()
+	{
+		System.out.println("此处访问的是静态内部类的实例成员 age = " + new Inner().age);
+	} 
 }
 //演示静态内部类
 public class StaticInnerClassDemo
@@ -23,6 +27,7 @@ public class StaticInnerClassDemo
 		Outter.Inner in = new Outter.Inner();//这里不同于实例内部类的new Outter().new Inner();
 		in.test();
 		System.out.println(Outter.Inner.name);//4：测试类可以通过完整的类名直接访问内部类的 静态成员
+		new Outter().accessStaticInnerInstatncefild();
 	}
 }
 /**
