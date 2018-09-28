@@ -1,14 +1,17 @@
 /**
 	此程序示范了Lambda表达式的几种简化写法
  */
+ @FunctionalInterface
 interface Eatable
 {
 	void taste();
 }
+@FunctionalInterface
 interface Flyable
 {
 	void fly(String weather);
 }
+@FunctionalInterface
 interface Addable
 {
 	int add(int a,int b);
@@ -47,3 +50,16 @@ public class LambdaDemo1
 		ld1.test((int a, int b)->a + b);
 	}
 }
+/**
+	Lambda表达式的类型是一种“目标类型”，Lambda表达式的目标类型 必须是 “函数式接口”，其代表包含一个抽象方法的接口。
+	函数式接口可以包含多个默认方法、类方法但是只能声明一个抽象方法
+	即Lambda表达式有如下两个限制：
+		1，Lambda表达式的目标类型必须是明确的函数式接口；
+		2，Lambda表达式只能为函数式接口创建对象。Lambda表达式只能实现一个方法，因此它只能为只有一个抽象方法的接口（函数式接口）创建对象
+
+	为了保证Lambda表达式的目标类型是一个明确的函数式接口，可以采用如下常见的三种方式：
+		1）将Lambda表达式赋值给函数式接口类型的变量
+		2）将Lambda表达式作为函数式接口类型的参数传递给某方法
+		3）使用函数式接口对Lambda表达式进行强制类型转换
+
+ */
