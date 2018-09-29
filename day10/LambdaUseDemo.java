@@ -15,6 +15,8 @@
 		=======================================================================================================================
  */
 //先创建函数式接口，只是包含一个抽象类方法
+import javax.swing.JFrame;
+
 @FunctionalInterface
 interface Conveter
 {
@@ -27,6 +29,11 @@ interface Mytest
 	// 该方法负责根据String、int、int三个参数生成一个String返回值
 	String test(String a, int b, int c);
 }
+@FunctionalInterface
+interface YourTest
+{
+	JFrame win(String title);
+}
 public class LambdaUseDemo
 {
 	public void FirstUse(String from, Conveter conv)
@@ -37,7 +44,10 @@ public class LambdaUseDemo
 	{
 		System.out.println(mt.test(a,b,c));
 	}
-
+	public void FourthUse(String title,YourTest yt)
+	{
+		System.out.println(yt.win(title));
+	}
 	public static void main(String[] args) 
 	{
 		// 下面代码使用Lambda表达式创建Conveter对象
@@ -69,6 +79,14 @@ public class LambdaUseDemo
 		//Mytest mt = (a,b,c)->a.substring(b,c);//Lambda表达式
 		Mytest mt = String::substring;
 		lamd1.ThirdUse("hello,I am a hero",4,10,mt);//类名::实例方法
-
+		
+		// 采用引用构造器的方法
+		// 类名::new
+		// 函数式接口中被实现的方法的全部参数传递给该构造器作为参数
+		System.out.println("采用第四种形式：引用构造器");
+		//YourTest yt = title->new JFrame(title);
+		YourTest yt = JFrame::new;
+		lamd1.FourthUse("hello",yt);
+		
 	}
 }
