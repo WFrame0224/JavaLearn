@@ -9,6 +9,8 @@
 */
 enum Weekday
 {
+	//枚举的构造器只能使用private修饰，缺省采用的也是private修饰
+	// 第一行列出四个枚举实例
 	MONDAY,TUESDAY,WEDNESDAY,THUSEDAY,FRIDAY,SATURDAY,SUNDAY;
 }
 /*
@@ -72,6 +74,11 @@ class EnumDemo
 {
 	public static void main(String[] args) 
 	{
+		// 输出枚举类的所有成员
+		for(Weekday s : Weekday.values())
+		{
+			System.out.println(s);
+		}
 		//创建一个员工对象，并设置他哪一天休息
 		Employee e = new Employee();
 		e.setRestday(Weekday.WEDNESDAY);
@@ -86,6 +93,7 @@ class EnumDemo
 		}
 		System.out.println(Weekday.SUNDAY);
 		System.out.println(Weekday.SUNDAY.name());
+		// 返回枚举常量的序数（其中初始常量的序数为0）
 		System.out.println(Weekday.SUNDAY.ordinal());
 
 	}

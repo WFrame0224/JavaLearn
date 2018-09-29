@@ -26,6 +26,7 @@ public class SystemDemo {
 		new SystemDemo();
 		System.gc();
 		System.out.println("Ending....");//用于测试该语句是否还会执行
+
 	}
 
 }
